@@ -1,0 +1,200 @@
+    * {
+        margin: auto;
+        padding: 0;
+    }
+    
+    @font-face {
+        font-family: montserrat-semi;
+        src: url(fonts/montserrat-semibold.otf);
+    }
+    
+    @font-face {
+        font-family: montserrat-bold;
+        src: url(fonts/montserrat-bold.otf);
+    }
+    
+    @font-face {
+        font-family: sentinel-bolditalic;
+        src: url(fonts/sentinel-bolditalic.otf);
+    }
+    
+    body {
+        background-color: #252332;
+    }
+    
+    h2 {
+        float: left;
+        font-family: montserrat-semi;
+        color: white
+    }
+    
+    nav#top-nav ul {
+        font-family: montserrat-semi;
+        position: absolute;
+        top: 20px;
+        left: 40px;
+    }
+    
+    nav#top-nav ul li {
+        display: inline;
+        margin-right: 30px;
+    }
+    
+    nav#top-nav ul li a {
+        color: #b6a536;
+        text-decoration: none;
+    }
+    
+    #search {
+        position: absolute;
+        top: 20px;
+        right: 250px;
+    }
+    
+    #title-input {
+        width: 500px;
+    }
+    
+    select {
+        width: 550px;
+        margin-top: 0px;
+    }
+    
+    textarea {
+        width: 500px;
+        height: 180px;
+        resize: none;
+        color: #79797C;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    
+    form input,
+    textarea {
+        font-family: montserrat-semi;
+        padding: 10px 25px 10px 25px;
+        border-radius: 5px;
+        background-color: #252332;
+        border: 2px solid #58585B;
+        margin-bottom: 20px;
+    }
+    
+    form input[type=text] {
+        color: #b6a536;
+    }
+    
+    #title-input,
+    textarea {
+        background-color: white;
+        border: none;
+    }
+    
+    form input[type="submit"] {
+        background-color: #58585B;
+        color: white;
+    }
+    
+    form input[type="submit"]:hover {
+        background-color: #79797C;
+    }
+    
+    #share a {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        border: 0px solid;
+        padding: 10px 25px 10px 25px;
+        background-color: #58585B;
+        color: white;
+        text-decoration: none;
+        font-family: montserrat-semi;
+        border-radius: 5px;
+    }
+    
+    #share a:hover {
+        background-color: #79797C;
+    }
+    
+    nav#universe ul {
+        position: absolute;
+        top: 230px;
+        left: 40px;
+    }
+    
+    nav#universe ul li {
+        margin-bottom: 15px;
+        list-style-type: none;
+    }
+    
+    nav#universe ul li a {
+        font-family: montserrat-semi;
+        text-decoration: none;
+    }
+    
+    nav#universe ul li a.race {
+        color: #b66bab;
+    }
+    
+    nav#universe ul li a.gender {
+        color: #e63f5f;
+    }
+    
+    nav#universe ul li a.sexuality {
+        color: #51c6e0;
+    }
+    
+    nav#universe ul li a.class {
+        color: #68bf76;
+    }
+    
+    section#globe img {
+        display: block;
+        margin: auto;
+        margin-top: 90px;
+    }
+    
+    section#share-overlay {
+        margin-left: 250px;
+        width: 55%;
+        height: 80%;
+        position: absolute;
+        top: 65px;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, .6);
+        visibility: hidden;
+        font-family: montserrat-semibold;
+        color: white;
+        padding: 30px 30px 0px 100px;
+    }
+    
+    section#share-overlay p {
+        color: white;
+        font-size: 30px;
+    }
+    
+    section#share-overlay nav#share-close {
+        width: 40px;
+        text-align: center;
+        position: relative;
+        top: -15px;
+        left: 300px;
+        font-size: 25px;
+    }
+    
+    section#share-overlay nav#share-close a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    section#share-overlay nav#share-close a:hover {
+        text-decoration: none;
+        color: #EF4640;
+    }
+    
+    section#welcome-overlay {
+        visibility: visible;
+    }
+    
+    section#welcome-close {
+        visibility: hidden;
+    }

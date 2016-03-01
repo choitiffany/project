@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel=stylesheet href=index.css>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src=index.js></script>
+
+    <title>Universe</title>
+</head>
+
+<body>
+    <!--top nav-->
+    <nav id=top-nav>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--search bar-->
+    <form name="search">
+        <input type="text" name="search" placeholder="Search" id="search">
+    </form>
+
+    <div id="share">
+        <a href="#">Share your story!</a>
+    </div>
+
+    <!--universe nav-->
+    <nav id=universe>
+        <ul>
+            <li><a class="race" href="#">Race</a></li>
+            <li><a class="gender" href="#">Gender</a></li>
+            <li><a class="sexuality" href="#">Sexuality</a></li>
+            <li><a class="class" href="#">Social Class</a></li>
+        </ul>
+    </nav>
+
+    <!--globe-->
+    <section id="globe">
+        <img src="globe.png" alt="globe">
+    </section>
+
+    <!--welcome overlay-->
+    <section id="welcome-overlay">
+        <h2> Welcome </h2>
+        <nav id="welcome-close"><a href="#">X</a></nav>
+    </section>
+
+    <!--share a story overlay-->
+    <section id="share-overlay">
+        <h2>Share your story</h2>
+        <br>
+        <form name="share">
+            <nav id="share-close"><a href="#">X</a></nav>
+            <input type="text" name="title" placeholder="Title" id="title-input">
+            <br>
+            <textarea>Write your story here...</textarea>
+            <br>
+            <br>
+            <select id="universe" name="universe">
+                <option value="select">Select a Universe...</option>
+                <option value="race">Race</option>
+                <option value="gender">Gender</option>
+                <option value="sexuality">Sexuality</option>
+                <option value="socialClass">Social Class</option>
+            </select>
+            <br>
+            <br>
+
+            <input type="submit" value="Submit" />
+
+        </form>
+    </section>
+</body>
+
+</html>

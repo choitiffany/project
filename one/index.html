@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <link rel=stylesheet href=index.css>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src=index.js></script>
 
     <title>Universe</title>
@@ -46,8 +46,6 @@
 
     <!--welcome overlay-->
     <section id="welcome-overlay">
-        <h2> Welcome </h2>
-        <nav id="welcome-close"><a href="#">X</a></nav>
     </section>
 
     <!--share a story overlay-->
@@ -58,17 +56,11 @@
             <nav id="share-close"><a href="#">X</a></nav>
             <input type="text" name="title" placeholder="Title" id="title-input">
             <br>
-            <textarea>Write your story here...</textarea>
+            <textarea>
+                Write your story here...
+            </textarea>
             <br>
-            <br>
-            <select id="universe" name="universe">
-                <option value="select">Select a Universe...</option>
-                <option value="race">Race</option>
-                <option value="gender">Gender</option>
-                <option value="sexuality">Sexuality</option>
-                <option value="socialClass">Social Class</option>
-            </select>
-            <br>
+
             <br>
 
             <input type="submit" value="Submit" />

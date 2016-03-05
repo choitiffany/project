@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel=stylesheet href=index.css>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src=index.js></script>
+
+    <title>Story Share</title>
+</head>
+
+<body>
+    <!--welcome overlay-->
+    <section id="welcome-overlay">
+        <h2> Welcome </h2>
+        <br>
+        <article> This is a safe space for you to share your story. Each universe contains real stories about real experiences. </article>
+        <br>
+        <nav id="welcome-close"><a href="#">Enter</a></nav>
+    </section>
+
+    <!--top nav-->
+    <nav id=top-nav>
+        <ul>
+            <li>Story Share</li>
+            <li><a href="#" class="info-nav">About</a></li>
+            <li><a href="#" class="info-nav">Contact Us</a></li>
+            <li id="share"><a href="#">Share your story!</a>
+            </li>
+            <li class="universe"><a class="race" href="#">Race</a></li>
+            <li class="universe"><a class="gender" href="#">Gender</a></li>
+            <li class="universe"><a class="sexuality" href="#">Sexuality</a></li>
+            <li class="universe"><a class="class" href="#">Social Class</a></li>
+            <li class="universe"><a class="all" href="#">Show All</a></li>
+            <li id="searching">
+
+
+                <!--search bar-->
+                <form name="search">
+                    <input type="text" name="search" placeholder="Search" id="search">
+                </form>
+            </li>
+        </ul>
+    </nav>
+
+    <!--globe-->
+    <section id="globe">
+        <img src="globe.png" alt="globe">
+    </section>
+
+    <!--share a story overlay-->
+    <section id="share-overlay">
+        <h2>Share your story</h2>
+        <br>
+        <form name="share">
+            <nav id="share-close"><a href="#">X</a></nav>
+            <p> Which universe(s) does your story belong in? </p>
+            <input type="checkbox" name="race" value="race"> Race
+            <br>
+            <input type="checkbox" name="gender" value="gender" id="gender"> Gender
+            <br>
+            <input type="checkbox" name="sexuality" value="sexuality" id="sexuality"> Sexuality
+
+            <br>
+            <input type="checkbox" name="class" value="class"> Social Class
+            <br>
+            <input type="text" name="title" placeholder="Title" id="title-input">
+            <br>
+            <textarea>Write your story here...</textarea>
+            <br>
+
+
+            <input type="submit" value="Submit" />
+
+        </form>
+    </section>
+</body>
+
+</html>

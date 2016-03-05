@@ -51,22 +51,11 @@
         right: 250px;
     }
     
-    #title-input {
-        width: 500px;
-    }
-    
-    select {
-        width: 550px;
-        margin-top: 0px;
-    }
-    
     textarea {
         width: 500px;
-        height: 180px;
+        height: 200px;
         resize: none;
         color: #79797C;
-        padding: 0px;
-        margin-bottom: 0px;
     }
     
     form input,
@@ -154,22 +143,20 @@
     }
     
     section#share-overlay {
-        margin-left: 250px;
-        width: 55%;
+        width: 70%;
         height: 80%;
         position: absolute;
-        top: 65px;
-        border-radius: 7px;
+        top: 70px;
+        margin-left: 180px;
         background-color: rgba(0, 0, 0, .6);
         visibility: hidden;
         font-family: montserrat-semibold;
         color: white;
-        padding: 30px 30px 0px 100px;
+        padding: 30px 30px 0px 60px;
     }
     
     section#share-overlay p {
         color: white;
-        font-size: 30px;
     }
     
     section#share-overlay nav#share-close {
@@ -177,24 +164,11 @@
         text-align: center;
         position: relative;
         top: -15px;
-        left: 300px;
-        font-size: 25px;
+        left: 420px;
+        font-size: 40px;
     }
     
     section#share-overlay nav#share-close a {
         text-decoration: none;
         color: white;
-    }
-    
-    section#share-overlay nav#share-close a:hover {
-        text-decoration: none;
-        color: #EF4640;
-    }
-    
-    section#welcome-overlay {
-        visibility: visible;
-    }
-    
-    section#welcome-close {
-        visibility: hidden;
     }

@@ -1,13 +1,23 @@
 $(document).ready(function () {
         console.log("ready");
 
+        //        window.onload = function () {
+        //            console.log("reading js");
+        //            $('#welcome-overlay').css('left', 'center').animate({
+        //                width: '100%',
+        //                left: '0'
+        //            });
+        //            $('section #welcome-overlay').animate({
+        //                width: '100%',
+        //                left: '0'
+        //            });
+        //            $('section #welcome-overlay').css('visibility', 'visible');
+        //
+        //            return false;
+        //
+        //        }
 
-        $('section#welcome-overlay nav#welcome-close').click(function () {
-            console.log("clicked close");
-            $('section#welcome-overlay').css('visibility', 'hidden');
-        });
-
-        $('nav#top-nav ul li#share a').click(function () {
+        $('#share a').click(function () {
             console.log("clicked share button");
             $('section#share-overlay').css('visibility', 'visible');
             return false;
@@ -18,15 +28,12 @@ $(document).ready(function () {
             $('section#share-overlay').css('visibility', 'hidden');
         });
 
-
-
-
         //share story form
         document.share.onsubmit = processForm;
 
         function processForm() {
             var title = document.share.title.value;
-
+            var story = document.share.story.value;
 
             return false;
         }

@@ -1,252 +1,200 @@
-* {
-    margin: auto;
-    padding: 0;
-}
-
-@font-face {
-    font-family: Montserrat-Regular;
-    src: url(fonts/Montserrat-Regular.otf);
-}
-
-@font-face {
-    font-family: montserrat-semi;
-    src: url(fonts/montserrat-semibold.otf);
-}
-
-@font-face {
-    font-family: montserrat-bold;
-    src: url(fonts/montserrat-bold.otf);
-}
-
-@font-face {
-    font-family: sentinel-bolditalic;
-    src: url(fonts/sentinel-bolditalic.otf);
-}
-
-body {
-    /*background-color: #252332;*/
-    background-color: black;
-}
-
-section#welcome-overlay {
-    visibility: visible;
-    position: absolute;
-    width: 60%;
-    height: 70%;
-    top: 100px;
-    left: 250px;
-    background-color: rgba(0, 0, 0, .7);
-    padding: 70px 0px 0px 90px;
-    color: white;
-}
-
-section#welcome-overlay article {
-    clear: left;
-    margin-top: 45px;
-    margin-bottom: 30px;
-    font-family: Montserrat-Regular;
-    font-size: 13px;
-}
-
-section#welcome-overlay #welcome-close a {
-    background-color: white;
-    border-radius: 5px;
-    font-family: montserrat-semi;
-    border: 0px solid;
-    padding: 5px 20px 5px 20px;
-    color: black;
-    text-decoration: none;
-}
-
-section#welcome-overlay #welcome-close a:hover {
-    background-color: #b6a536;
-    color: white;
-}
-
-.info-nav {
-    font-family: Montserrat-Regular;
-    font-size: 10px;
-}
-
-nav#top-nav {
-    font-family: montserrat-semi;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    font-size: 14px;
-    padding-top: 20px;
-    padding-left: 40px;
-    background-color: #262626;
-}
-
-nav#top-nav ul li {
-    display: inline;
-    margin-right: 15px;
-    color: lightgray;
-}
-
-nav#top-nav ul li a {
-    color: #b6a536;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-nav#top-nav ul li#share a {
-    border: 0px solid;
-    padding: 5px 15px 5px 15px;
-    background-color: #b6a536;
-    color: white;
-    text-decoration: none;
-    font-family: montserrat-semi;
-    border-radius: 5px;
-    margin-left: 90px;
-}
-
-nav#top-nav ul li#share a:hover {
-    background-color: #92842B;
-}
-
-nav#top-nav ul li.universe a {
-    border: 0px solid;
-    padding: 5px 15px 5px 15px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-nav#top-nav ul li.universe a.race {
-    background-color: #b66bab;
-}
-
-nav#top-nav ul li.universe a.race:hover {
-    background-color: #895080;
-}
-
-nav#top-nav ul li.universe a.gender {
-    background-color: #e63f5f;
-}
-
-nav#top-nav ul li.universe a.gender:hover {
-    background-color: #AD2F47;
-}
-
-nav#top-nav ul li.universe a.sexuality {
-    background-color: #51c6e0;
-}
-
-nav#top-nav ul li.universe a.sexuality:hover {
-    background-color: #3D95A8;
-}
-
-nav#top-nav ul li.universe a.class {
-    background-color: #68bf76;
-}
-
-nav#top-nav ul li.universe a.class:hover {
-    background-color: #4E8F59;
-}
-
-nav#top-nav ul li.universe a.all {
-    background-color: #808080;
-}
-
-nav#top-nav ul li.universe a.all:hover {
-    background-color: #555555;
-}
-
-nav#top-nav ul li#searching form input#search {
-    position: absolute;
-    top: 14px;
-    right: 70px;
-    padding: 5px 15px 5px 15px;
-    background: none;
-}
-
-#title-input {
-    width: 500px;
-}
-
-textarea {
-    width: 500px;
-    height: 180px;
-    resize: none;
-    color: #79797C;
-    padding: 0px;
-    margin-bottom: 0px;
-}
-
-form input,
-textarea {
-    font-family: montserrat-semi;
-    padding: 10px 25px 10px 25px;
-    border-radius: 5px;
-    background-color: #252332;
-    border: 2px solid #58585B;
-    margin-bottom: 20px;
-}
-
-form input[type=text] {
-    color: #b6a536;
-}
-
-#title-input,
-textarea {
-    background-color: white;
-    border: none;
-}
-
-form input[type="submit"] {
-    background-color: #58585B;
-    color: white;
-}
-
-form input[type="submit"]:hover {
-    background-color: #79797C;
-}
-
-section#globe img {
-    display: block;
-    margin: auto;
-    margin-top: 90px;
-}
-
-section#share-overlay {
-    margin-left: 250px;
-    width: 55%;
-    height: 80%;
-    position: absolute;
-    top: 65px;
-    border-radius: 7px;
-    background-color: rgba(50, 50, 50, .7);
-    visibility: hidden;
-    font-family: montserrat-semibold;
-    color: white;
-    padding: 30px 30px 0px 100px;
-}
-
-section#share-overlay h2,
-section#welcome-overlay h2 {
-    float: left;
-    font-family: montserrat-semi;
-    color: white;
-    font-size: 30px;
-}
-
-section#share-overlay nav#share-close {
-    width: 40px;
-    text-align: center;
-    position: relative;
-    top: -15px;
-    left: 300px;
-    font-size: 25px;
-}
-
-section#share-overlay nav#share-close a {
-    text-decoration: none;
-    color: white;
-}
-
-section#share-overlay nav#share-close a:hover {
-    text-decoration: none;
-    color: #EF4640;
-}
+    * {
+        margin: auto;
+        padding: 0;
+    }
+    
+    @font-face {
+        font-family: montserrat-semi;
+        src: url(fonts/montserrat-semibold.otf);
+    }
+    
+    @font-face {
+        font-family: montserrat-bold;
+        src: url(fonts/montserrat-bold.otf);
+    }
+    
+    @font-face {
+        font-family: sentinel-bolditalic;
+        src: url(fonts/sentinel-bolditalic.otf);
+    }
+    
+    body {
+        background-color: #252332;
+    }
+    
+    h2 {
+        float: left;
+        font-family: montserrat-semi;
+        color: white
+    }
+    
+    nav#top-nav ul {
+        font-family: montserrat-semi;
+        position: absolute;
+        top: 20px;
+        left: 40px;
+    }
+    
+    nav#top-nav ul li {
+        display: inline;
+        margin-right: 30px;
+    }
+    
+    nav#top-nav ul li a {
+        color: #b6a536;
+        text-decoration: none;
+    }
+    
+    #search {
+        position: absolute;
+        top: 20px;
+        right: 250px;
+    }
+    
+    #title-input {
+        width: 500px;
+    }
+    
+    select {
+        width: 550px;
+        margin-top: 0px;
+    }
+    
+    textarea {
+        width: 500px;
+        height: 180px;
+        resize: none;
+        color: #79797C;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    
+    form input,
+    textarea {
+        font-family: montserrat-semi;
+        padding: 10px 25px 10px 25px;
+        border-radius: 5px;
+        background-color: #252332;
+        border: 2px solid #58585B;
+        margin-bottom: 20px;
+    }
+    
+    form input[type=text] {
+        color: #b6a536;
+    }
+    
+    #title-input,
+    textarea {
+        background-color: white;
+        border: none;
+    }
+    
+    form input[type="submit"] {
+        background-color: #58585B;
+        color: white;
+    }
+    
+    form input[type="submit"]:hover {
+        background-color: #79797C;
+    }
+    
+    #share a {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        border: 0px solid;
+        padding: 10px 25px 10px 25px;
+        background-color: #58585B;
+        color: white;
+        text-decoration: none;
+        font-family: montserrat-semi;
+        border-radius: 5px;
+    }
+    
+    #share a:hover {
+        background-color: #79797C;
+    }
+    
+    nav#universe ul {
+        position: absolute;
+        top: 230px;
+        left: 40px;
+    }
+    
+    nav#universe ul li {
+        margin-bottom: 15px;
+        list-style-type: none;
+    }
+    
+    nav#universe ul li a {
+        font-family: montserrat-semi;
+        text-decoration: none;
+    }
+    
+    nav#universe ul li a.race {
+        color: #b66bab;
+    }
+    
+    nav#universe ul li a.gender {
+        color: #e63f5f;
+    }
+    
+    nav#universe ul li a.sexuality {
+        color: #51c6e0;
+    }
+    
+    nav#universe ul li a.class {
+        color: #68bf76;
+    }
+    
+    section#globe img {
+        display: block;
+        margin: auto;
+        margin-top: 90px;
+    }
+    
+    section#share-overlay {
+        margin-left: 250px;
+        width: 55%;
+        height: 80%;
+        position: absolute;
+        top: 65px;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, .6);
+        visibility: hidden;
+        font-family: montserrat-semibold;
+        color: white;
+        padding: 30px 30px 0px 100px;
+    }
+    
+    section#share-overlay p {
+        color: white;
+        font-size: 30px;
+    }
+    
+    section#share-overlay nav#share-close {
+        width: 40px;
+        text-align: center;
+        position: relative;
+        top: -15px;
+        left: 300px;
+        font-size: 25px;
+    }
+    
+    section#share-overlay nav#share-close a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    section#share-overlay nav#share-close a:hover {
+        text-decoration: none;
+        color: #EF4640;
+    }
+    
+    section#welcome-overlay {
+        visibility: visible;
+    }
+    
+    section#welcome-close {
+        visibility: hidden;
+    }

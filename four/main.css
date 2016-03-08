@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: Montserrat-Regular;
+    font-family: montserrat-regular;
     src: url(fonts/Montserrat-Regular.otf);
 }
 
@@ -24,48 +24,91 @@
 }
 
 body {
-    /*background-color: #252332;*/
     background-color: black;
 }
 
 section#welcome-overlay {
     visibility: visible;
     position: absolute;
-    width: 60%;
-    height: 70%;
-    top: 100px;
-    left: 250px;
-    background-color: rgba(0, 0, 0, .7);
-    padding: 70px 0px 0px 90px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, .7);
     color: white;
+    font-family: montserrat-regular;
+}
+
+section#welcome-overlay #welcome-text-container {
+    margin-top: 150px;
+    width: 8in;
 }
 
 section#welcome-overlay article {
-    clear: left;
-    margin-top: 45px;
+    margin-top: 30px;
     margin-bottom: 30px;
-    font-family: Montserrat-Regular;
-    font-size: 13px;
+    font-size: 14px;
 }
 
-section#welcome-overlay #welcome-close a {
+section#welcome-overlay ul#share-location li {
+    list-style-type: none;
+    display: inline;
+}
+
+section#welcome-overlay ul#share-location li a {
     background-color: white;
     border-radius: 5px;
     font-family: montserrat-semi;
     border: 0px solid;
     padding: 5px 20px 5px 20px;
-    color: black;
+    margin-right: 10px;
+    font-size: 14px;
     text-decoration: none;
+    color: black;
 }
 
-section#welcome-overlay #welcome-close a:hover {
-    background-color: #b6a536;
+section#welcome-overlay ul#share-location li a:hover {
+    background-color: darkgray;
+}
+
+section#about-overlay {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(50, 50, 50, .7);
+    font-family: montserrat-regular;
     color: white;
+}
+
+section#about-overlay h2 {
+    margin-top: 200px;
+    width: 8in;
+}
+
+section#about-overlay p {
+    margin-top: 50px;
+    padding: 0px 100px 0px 100px;
+    width: 8in;
+}
+
+section#about-overlay nav#about-close a {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 35px;
+    border: 2px solid white;
+    width: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+section#about-overlay nav#about-close a:hover {
+    color: darkgray;
 }
 
 .info-nav,
 .contact-nav {
-    font-family: Montserrat-Regular;
+    font-family: montserrat-regular;
     font-size: 10px;
 }
 
@@ -98,9 +141,8 @@ nav#top-nav ul li#share a {
     background-color: #b6a536;
     color: white;
     text-decoration: none;
-    font-family: montserrat-semi;
     border-radius: 5px;
-    margin-left: 90px;
+    margin-left: 110px;
 }
 
 nav#top-nav ul li#share a:hover {
@@ -155,61 +197,22 @@ nav#top-nav ul li.universe a.all:hover {
     background-color: #555555;
 }
 
-nav#top-nav ul li#searching form input#search {
-    position: absolute;
+nav#top-nav ul li form#search-bar input {
+    /*position: absolute;
     top: 14px;
-    right: 70px;
-    padding: 5px 15px 5px 15px;
+    right: 70px;*/
     background: none;
-}
-
-#title-input {
-    width: 500px;
-}
-
-textarea {
-    width: 500px;
-    height: 180px;
-    resize: none;
-    color: #79797C;
-    padding: 0px;
-    margin-bottom: 0px;
-}
-
-form input,
-textarea {
-    font-family: montserrat-semi;
-    padding: 10px 25px 10px 25px;
+    position: absolute;
+    top: 15px;
+    right: 80px;
+    padding: 5px 8px 5px 15px;
     border-radius: 5px;
-    background-color: #252332;
-    border: 2px solid #58585B;
-    margin-bottom: 20px;
-}
-
-form input[type=text] {
-    color: #b6a536;
-}
-
-#title-input,
-textarea {
-    background-color: white;
-    border: none;
-}
-
-form input[type="submit"] {
-    background-color: #58585B;
+    font-family: montserrat-semi;
     color: white;
 }
 
-form input[type="submit"]:hover {
-    background-color: #79797C;
-}
 
-section#globe img {
-    display: block;
-    margin: auto;
-    margin-top: 90px;
-}
+/*share overlay*/
 
 section#share-overlay {
     margin-left: 250px;
@@ -218,36 +221,78 @@ section#share-overlay {
     position: absolute;
     top: 65px;
     border-radius: 7px;
-    background-color: rgba(50, 50, 50, .7);
+    background-color: rgba(50, 50, 50, .9);
     visibility: hidden;
     font-family: montserrat-semibold;
     color: white;
     padding: 30px 30px 0px 100px;
 }
 
-section#share-overlay h2,
-section#welcome-overlay h2 {
+section#share-overlay h2 {
     float: left;
     font-family: montserrat-semi;
     color: white;
     font-size: 30px;
 }
 
-section#share-overlay nav#share-close {
-    width: 40px;
-    text-align: center;
-    position: relative;
-    top: -15px;
-    left: 300px;
-    font-size: 25px;
-}
-
-section#share-overlay nav#share-close a {
-    text-decoration: none;
+section#share-overlay form#share-form {
+    font-family: montserrat-semi;
     color: white;
 }
 
-section#share-overlay nav#share-close a:hover {
+section#share-overlay form#share-form #title-input {
+    width: 500px;
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 5px 10px 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: montserrat-semi;
+}
+
+section#share-overlay form#share-form textarea {
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: lightgray;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 20px;
+    border: none;
+    font-family: montserrat-semi;
+}
+
+section#share-overlay form#share-form input[type="submit"] {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    font-family: montserrat-semi;
+    border: none;
+}
+
+section#share-overlay form#share-form input[type="submit"]:hover {
+    background-color: darkgray;
+}
+
+section#share-overlay nav#share-close a {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 35px;
+    border: 2px solid white;
+    width: 50px;
     text-decoration: none;
-    color: #EF4640;
+    text-align: center;
+    color: white;
+    font-family: montserrat-semi;
+}
+
+section#share-overlay nav#share-close a:hover {
+    color: darkgray;
+}
+
+#mapid {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }

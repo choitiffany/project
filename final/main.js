@@ -269,7 +269,8 @@ $(document).ready(function () {
     //show all button
     $('nav#top-nav ul li.universe a#all').click(function () {
         $('nav#top-nav ul li.universe a:not(#all)').addClass('shown');
-        showStories(stories, allCategories);
+        shownCategories = allCategories.slice(0);
+        showStories(stories, shownCategories);
     });
 
 }); //end
